@@ -9,6 +9,13 @@ html, body
     padding: 0;
 }
 
+@media not handheld {
+  .flex-container {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 p {
   color: white;
   font-size: 18px;
@@ -17,7 +24,7 @@ p {
 .flex-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* align items in Main Axis */
+  justify-content: flex-end; /* align items in Main Axis */
 }
 
 .content {
@@ -70,11 +77,4 @@ p {
   text-align: center;
   color: white;
   font-size: 45px;
-}
-
-@media all and (min-width: 1024px) {
-  flex-container {
-    height: 100%;
-    width: 100%;
-  }
 }
